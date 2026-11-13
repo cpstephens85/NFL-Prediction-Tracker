@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.instructions {
+    margin-bottom: 25px;
+}
+
+.matchup {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.team-row label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.team-row span {
+    font-weight: bold;
+}
+
+details {
+    margin-top: 15px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+#saveMessage {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#savedPredictions {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+}

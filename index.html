@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NFL Prediction Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="predictionView">
+
+        <h1>NFL Prediction Tracker</h1>
+
+        <p>
+            Pick the teams you think will win this week and save your predictions to review later.
+        </p>
+
+        <p class="instructions">
+            Select one winner for each game, then save your predictions.<br>
+            Click "Save Predictions" to store your current selections.
+        </p>
+
+        <div class="matchup">
+            <h2>Game 1</h2>
+
+            <div class="team-row">
+                <label>
+                    <input type="radio" name="game1" value="Panthers">
+                    Carolina Panthers
+                </label>
+
+                <span>at</span>
+
+                <label>
+                    <input type="radio" name="game1" value="Saints">
+                    New Orleans Saints
+                </label>
+            </div>
+
+            <details>
+                <summary>Game Details</summary>
+                <p>Sunday, 1:00 PM</p>
+            </details>
+        </div>
+
+        <div class="matchup">
+            <h2>Game 2</h2>
+
+            <div class="team-row">
+                <label>
+                    <input type="radio" name="game2" value="Chiefs">
+                    Kansas City Chiefs
+                </label>
+
+                <span>at</span>
+
+                <label>
+                    <input type="radio" name="game2" value="Bills">
+                    Buffalo Bills
+                </label>
+            </div>
+
+            <details>
+                <summary>Game Details</summary>
+                <p>Sunday, 4:25 PM</p>
+            </details>
+        </div>
+
+        <div class="matchup">
+            <h2>Game 3</h2>
+
+            <div class="team-row">
+                <label>
+                    <input type="radio" name="game3" value="Cowboys">
+                    Dallas Cowboys
+                </label>
+
+                <span>at</span>
+
+                <label>
+                    <input type="radio" name="game3" value="Raiders">
+                    Las Vegas Raiders
+                </label>
+            </div>
+
+            <details>
+                <summary>Game Details</summary>
+                <p>Monday, 8:15 PM</p>
+            </details>
+        </div>
+
+        <button id="saveButton">Save Predictions</button>
+
+        <p id="saveMessage"></p>
+
+        <button id="viewSavedButton">View Saved Predictions</button>
+
+    </div>
+
+    <div id="savedPredictions" style="display: none;">
+
+        <h1>Saved Predictions</h1>
+
+        <p>
+            Review the predictions you most recently saved.
+        </p>
+
+        <p id="savedGame1"></p>
+        <p id="savedGame2"></p>
+        <p id="savedGame3"></p>
+
+        <button id="backButton">Back to Predictions</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
